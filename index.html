@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>touchtap</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FF2480;
+            font-family: 'Gill Sans', serif;
+        }
+        .container {
+            text-align: center;
+            width: 90%; /* Make container width relative */
+        }
+        h1 {
+            margin: 0; /* Remove default margin from h1 */
+        }
+        .touchtap {
+            font-size: clamp(2rem, 10vw, 6rem); /* Set a responsive font size with max limit */
+            font-weight: 400;
+            color: #FEFEFE;
+        }
+        .subtitle {
+            font-size: clamp(1rem, 4vw, 2rem); /* Set a responsive subtitle size with max limit */
+            font-weight: 300;
+            color: #FEFEFE;
+            margin-top: 5px;
+        }
+        .contact-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #FEFEFE;
+            border: none;
+            color: #FF2480;
+            font-size: clamp(1rem, 4vw, 1.5rem); /* Responsive button text size with max limit */
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .contact-btn:hover {
+            background-color: #d1b07b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="touchtap">
+            touchtap
+        </h1>
+        <p class="subtitle">creating awesome mobile apps</p>
+        <br>
+        <a href="mailto:contact@touchtap.co.uk" class="contact-btn">contact us</a>
+    </div>
+</body>
+</html>
