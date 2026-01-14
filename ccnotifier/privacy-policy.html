@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Claude Code Notifier: Privacy Policy</title>
+  <style>
+    body {
+      font-family: "Gill Sans", sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 40px;
+      max-width: 900px;
+      background-color: #fff;
+      color: #000;
+    }
+    h1, h2, h3 {
+      font-weight: bold;
+      color: #FF2480;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+    h2 {
+      font-size: 1.4em;
+      margin-top: 1.5em;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.3em;
+    }
+    h3 {
+      font-size: 1.1em;
+      margin-top: 1.2em;
+      color: #333;
+    }
+    a {
+      color: #00f;
+    }
+    ul {
+      margin-left: 1.5em;
+    }
+    li {
+      margin-bottom: 0.5em;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1em 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f5f5f5;
+    }
+    .highlight {
+      background-color: #fff3cd;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 1em 0;
+    }
+    .app-section {
+      background-color: #f8f9fa;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 1em 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Claude Code Notifier: Privacy Policy</h1>
+  <p><strong>Last updated:</strong> January 14, 2025</p>
+  <p>This Privacy Policy explains how Claude Code Notifier (the macOS application) and Claude Code Notifier Companion (the iOS and Android companion applications), collectively referred to as "the Apps", handle your data. We are committed to transparency about what data is collected, how it is used, and who it may be shared with.</p>
+
+  <div class="highlight">
+    <strong>Summary:</strong> Claude Code Notifier processes information about your Claude Code sessions to deliver notifications. When you enable mobile notifications, session data is transmitted through our cloud relay service to your paired mobile device. We do not sell your data or use it for advertising purposes.
+  </div>
+
+  <h2>1. Overview of the Apps</h2>
+  <p>Claude Code Notifier is a notification system consisting of:</p>
+  <ul>
+    <li><strong>Claude Code Notifier</strong> (macOS): A menu bar application that monitors Claude Code sessions and delivers system notifications when Claude is waiting for input or requires permission approval.</li>
+    <li><strong>Claude Code Notifier Companion</strong> (iOS/Android): Mobile companion apps that receive notifications from your Mac and allow you to respond remotely.</li>
+  </ul>
+
+  <h2>2. Data We Collect</h2>
+
+  <h3>2.1 macOS Application</h3>
+  <p>The macOS application collects and stores the following data locally on your device:</p>
+
+  <table>
+    <tr>
+      <th>Data Type</th>
+      <th>Description</th>
+      <th>Purpose</th>
+    </tr>
+    <tr>
+      <td>Session Records</td>
+      <td>Claude Code session IDs, start/end times, duration, and session status</td>
+      <td>Track session history and statistics</td>
+    </tr>
+    <tr>
+      <td>Project Information</td>
+      <td>Project names and file system paths</td>
+      <td>Identify which project a notification relates to</td>
+    </tr>
+    <tr>
+      <td>Terminal Context</td>
+      <td>Terminal application name, session identifiers, process IDs, working directory</td>
+      <td>Enable future remote response capability</td>
+    </tr>
+    <tr>
+      <td>Session Events</td>
+      <td>Notification timestamps, event types, messages, and user prompts</td>
+      <td>Session history and analytics</td>
+    </tr>
+    <tr>
+      <td>Tool Context</td>
+      <td>Tool names and summarised tool inputs when Claude requests permission</td>
+      <td>Provide context in permission notifications</td>
+    </tr>
+    <tr>
+      <td>User Preferences</td>
+      <td>Notification settings, quiet hours, reminder intervals, terminal app preferences</td>
+      <td>Customise application behaviour</td>
+    </tr>
+    <tr>
+      <td>Webhook Configurations</td>
+      <td>URLs, authentication tokens, and payload templates for optional webhook integrations</td>
+      <td>Forward notifications to external services</td>
+    </tr>
+  </table>
+
+  <h3>2.2 iOS and Android Companion Applications</h3>
+  <p>The companion applications collect and store:</p>
+
+  <table>
+    <tr>
+      <th>Data Type</th>
+      <th>Description</th>
+      <th>Purpose</th>
+    </tr>
+    <tr>
+      <td>Device Identifier</td>
+      <td>A randomly generated UUID, created on first launch</td>
+      <td>Identify your device for pairing and notifications</td>
+    </tr>
+    <tr>
+      <td>Push Token</td>
+      <td>Apple Push Notification Service (APNs) token or Firebase Cloud Messaging (FCM) token</td>
+      <td>Deliver push notifications to your device</td>
+    </tr>
+    <tr>
+      <td>Notification Cache</td>
+      <td>History of received notifications including titles, messages, project names, and responses</td>
+      <td>Display notification history and allow offline access</td>
+    </tr>
+    <tr>
+      <td>Pairing Information</td>
+      <td>List of paired Mac computers and pairing status</td>
+      <td>Manage device pairings</td>
+    </tr>
+  </table>
+
+  <h3>2.3 Cloud Relay Service</h3>
+  <p>When mobile notifications are enabled, our cloud relay service processes:</p>
+
+  <table>
+    <tr>
+      <th>Data Type</th>
+      <th>Description</th>
+      <th>Retention</th>
+    </tr>
+    <tr>
+      <td>Notification Payloads</td>
+      <td>Notification type, title, message, prompt text, project name, project path, tool context</td>
+      <td>24 hours maximum</td>
+    </tr>
+    <tr>
+      <td>Session Identifiers</td>
+      <td>Session IDs linking notifications to Claude Code sessions</td>
+      <td>24 hours maximum</td>
+    </tr>
+    <tr>
+      <td>Terminal Context</td>
+      <td>Terminal application type and session identifiers</td>
+      <td>24 hours maximum</td>
+    </tr>
+    <tr>
+      <td>Device Records</td>
+      <td>Device IDs, push tokens, platform type, device names</td>
+      <td>Until pairing revoked</td>
+    </tr>
+    <tr>
+      <td>Pairing Records</td>
+      <td>Associations between Mac clients and mobile devices</td>
+      <td>Until pairing revoked</td>
+    </tr>
+    <tr>
+      <td>User Responses</td>
+      <td>Text responses sent from mobile devices to Claude Code</td>
+      <td>24 hours maximum</td>
+    </tr>
+  </table>
+
+  <h2>3. How We Use Your Data</h2>
+  <p>Your data is used exclusively to provide the functionality of the Apps:</p>
+  <ul>
+    <li><strong>Notification Delivery:</strong> To alert you when Claude Code requires attention</li>
+    <li><strong>Remote Response:</strong> To relay your responses from mobile devices back to Claude Code on your Mac</li>
+    <li><strong>Session Tracking:</strong> To display session history and usage statistics</li>
+    <li><strong>Webhook Forwarding:</strong> To send notifications to your configured external services (Slack, Discord, or custom endpoints)</li>
+    <li><strong>License Verification:</strong> To validate your purchase license (macOS app only)</li>
+  </ul>
+  <p>We do <strong>not</strong> use your data for:</p>
+  <ul>
+    <li>Advertising or marketing purposes</li>
+    <li>Selling or renting to third parties</li>
+    <li>Profiling or behavioural analysis</li>
+    <li>Training machine learning models</li>
+  </ul>
+
+  <h2>4. Data Storage and Security</h2>
+
+  <h3>4.1 Local Storage (macOS)</h3>
+  <ul>
+    <li><strong>Session Data:</strong> Stored using Apple's SwiftData framework in an encrypted database on your Mac</li>
+    <li><strong>Preferences:</strong> Stored in UserDefaults (standard macOS preferences storage)</li>
+    <li><strong>Cloud Credentials:</strong> Stored securely in the macOS Keychain</li>
+    <li><strong>Data Retention:</strong> Session history is automatically deleted after a configurable period (default: 30 days)</li>
+  </ul>
+
+  <h3>4.2 Local Storage (iOS/Android)</h3>
+  <ul>
+    <li><strong>Notification Cache:</strong> Stored locally on your device in the app's private storage</li>
+    <li><strong>Preferences:</strong> Stored in UserDefaults (iOS) or DataStore (Android)</li>
+    <li><strong>Data Retention:</strong> Notification cache persists until you manually clear it or uninstall the app</li>
+  </ul>
+
+  <h3>4.3 Cloud Storage</h3>
+  <ul>
+    <li><strong>Infrastructure:</strong> Our cloud relay service runs on Cloudflare Workers with data stored in Cloudflare D1 (SQLite)</li>
+    <li><strong>Encryption:</strong> All communications use TLS encryption (HTTPS/WSS)</li>
+    <li><strong>Geographic Location:</strong> Data may be processed in Cloudflare data centres worldwide</li>
+    <li><strong>Notification Expiry:</strong> Pending notifications are automatically deleted after 24 hours</li>
+  </ul>
+
+  <h2>5. Third-Party Services</h2>
+  <p>The Apps integrate with the following third-party services:</p>
+
+  <div class="app-section">
+    <h3>5.1 Gumroad (License Verification)</h3>
+    <p><strong>Used by:</strong> macOS application</p>
+    <p><strong>Purpose:</strong> Verify purchase licenses for the macOS application</p>
+    <p><strong>Data Shared:</strong></p>
+    <ul>
+      <li>License key (entered by you)</li>
+      <li>Product identifier</li>
+    </ul>
+    <p><strong>Data Received:</strong> License validity, purchase email address, usage count</p>
+    <p><strong>Privacy Policy:</strong> <a href="https://gumroad.com/privacy" target="_blank">https://gumroad.com/privacy</a></p>
+  </div>
+
+  <div class="app-section">
+    <h3>5.2 Sparkle (Auto-Updates)</h3>
+    <p><strong>Used by:</strong> macOS application</p>
+    <p><strong>Purpose:</strong> Check for and deliver application updates</p>
+    <p><strong>Data Shared:</strong> Standard HTTP request headers (IP address, user agent)</p>
+    <p><strong>Note:</strong> Sparkle retrieves update information from our servers; no personal data is collected by the Sparkle framework</p>
+    <p><strong>More Information:</strong> <a href="https://sparkle-project.org" target="_blank">https://sparkle-project.org</a></p>
+  </div>
+
+  <div class="app-section">
+    <h3>5.3 Apple Push Notification Service (APNs)</h3>
+    <p><strong>Used by:</strong> iOS companion application, Cloud relay service</p>
+    <p><strong>Purpose:</strong> Deliver push notifications to iOS devices</p>
+    <p><strong>Data Shared with Apple:</strong></p>
+    <ul>
+      <li>Device push token</li>
+      <li>Notification content (title, message, project name)</li>
+      <li>Notification metadata</li>
+    </ul>
+    <p><strong>Privacy Policy:</strong> <a href="https://www.apple.com/legal/privacy/" target="_blank">https://www.apple.com/legal/privacy/</a></p>
+  </div>
+
+  <div class="app-section">
+    <h3>5.4 Firebase Cloud Messaging (FCM)</h3>
+    <p><strong>Used by:</strong> Android companion application, Cloud relay service</p>
+    <p><strong>Purpose:</strong> Deliver push notifications to Android devices</p>
+    <p><strong>Data Shared with Google:</strong></p>
+    <ul>
+      <li>Device push token</li>
+      <li>Notification content (title, message, project name)</li>
+      <li>Notification metadata</li>
+    </ul>
+    <p><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+  </div>
+
+  <div class="app-section">
+    <h3>5.5 Cloudflare (Cloud Infrastructure)</h3>
+    <p><strong>Used by:</strong> Cloud relay service</p>
+    <p><strong>Purpose:</strong> Host the cloud relay service and store pairing/notification data</p>
+    <p><strong>Data Processed:</strong> All data transmitted through the cloud relay service</p>
+    <p><strong>Privacy Policy:</strong> <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">https://www.cloudflare.com/privacypolicy/</a></p>
+  </div>
+
+  <div class="app-section">
+    <h3>5.6 Optional Webhook Services</h3>
+    <p><strong>Used by:</strong> macOS application (user-configured)</p>
+    <p><strong>Purpose:</strong> Forward notifications to external services</p>
+    <p><strong>Supported Services:</strong> Slack, Discord, or any custom HTTP endpoint</p>
+    <p><strong>Data Shared:</strong> Notification content including project names, paths, messages, and timestamps</p>
+    <p><strong>Note:</strong> Webhooks are entirely optional and configured by you. Data is only sent to services you explicitly configure.</p>
+  </div>
+
+  <h2>6. Data Sharing</h2>
+  <p>We share your data only in the following circumstances:</p>
+  <ul>
+    <li><strong>With Your Paired Devices:</strong> Notification data is shared between your Mac and paired mobile devices via our cloud relay service</li>
+    <li><strong>With Push Notification Providers:</strong> Apple (APNs) and Google (FCM) receive notification content to deliver push notifications</li>
+    <li><strong>With Your Configured Webhooks:</strong> If you configure webhook integrations, notification data is sent to those endpoints</li>
+    <li><strong>For License Verification:</strong> License keys are verified with Gumroad's API</li>
+    <li><strong>Legal Requirements:</strong> We may disclose data if required by law or to protect our legal rights</li>
+  </ul>
+  <p>We do <strong>not</strong> sell, rent, or trade your personal data to third parties.</p>
+
+  <h2>7. Your Rights and Choices</h2>
+
+  <h3>7.1 Data Access and Deletion</h3>
+  <ul>
+    <li><strong>View Your Data:</strong> Session history is viewable within the macOS application</li>
+    <li><strong>Delete Local Data:</strong> Uninstalling the Apps removes all locally stored data</li>
+    <li><strong>Delete Cloud Data:</strong> Revoking a device pairing removes associated data from our cloud service</li>
+    <li><strong>Data Retention Settings:</strong> Configure how long session history is retained in the macOS app settings</li>
+  </ul>
+
+  <h3>7.2 Opt-Out Options</h3>
+  <ul>
+    <li><strong>Mobile Notifications:</strong> Disable mobile notifications to prevent data transmission to the cloud relay service</li>
+    <li><strong>Webhooks:</strong> Remove webhook configurations to stop data forwarding to external services</li>
+    <li><strong>Auto-Updates:</strong> Disable automatic update checks in the macOS app settings</li>
+  </ul>
+
+  <h3>7.3 Data Portability</h3>
+  <p>Currently, the Apps do not offer a data export feature. All locally stored data can be accessed through the application interface.</p>
+
+  <h2>8. Information About Project Paths and Commands</h2>
+  <div class="highlight">
+    <p><strong>Important:</strong> When Claude Code Notifier sends notifications, it may include:</p>
+    <ul>
+      <li>Full file system paths to your projects (e.g., <code>/Users/yourname/Projects/secret-project</code>)</li>
+      <li>Tool names and summarised inputs (e.g., file paths being read or commands being executed)</li>
+      <li>Working directory paths</li>
+    </ul>
+    <p>This information is transmitted to our cloud relay service and to push notification providers (Apple/Google) when mobile notifications are enabled. If you work with sensitive or confidential projects, consider whether mobile notifications are appropriate for your use case.</p>
+  </div>
+
+  <h2>9. Children's Privacy</h2>
+  <p>The Apps are not directed at children under 13 years of age. We do not knowingly collect personal information from children. If you believe we have inadvertently collected data from a child, please contact us to have it removed.</p>
+
+  <h2>10. International Data Transfers</h2>
+  <p>Our cloud relay service operates on Cloudflare's global infrastructure. Your data may be processed in data centres located outside your country of residence. By using the mobile notification features, you consent to this transfer of data.</p>
+
+  <h2>11. Changes to This Privacy Policy</h2>
+  <p>We may update this Privacy Policy as the Apps evolve. Material changes will be communicated through the application or on this page. The "Last updated" date at the top indicates when the policy was last revised.</p>
+
+  <h2>12. Contact Us</h2>
+  <p>If you have questions, concerns, or requests regarding this Privacy Policy or your data, please contact us:</p>
+  <p>
+    TouchTap Ltd<br />
+    <a href="mailto:contact@touchtap.co.uk">contact@touchtap.co.uk</a>
+  </p>
+</body>
+</html>
