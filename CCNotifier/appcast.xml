@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Claude Code Notifier Updates</title>
+    <link>https://touchtap.github.io/CCNotifier/</link>
+    <description>Updates for Claude Code Notifier</description>
+    <language>en</language>
+
+    <!-- Current Release -->
+    <item>
+      <title>Version 1.0.0</title>
+      <sparkle:version>1</sparkle:version>
+      <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Initial Release</h2>
+        <ul>
+          <li>Menu bar notifications for Claude Code</li>
+          <li>iOS companion app pairing</li>
+          <li>Remote response capability</li>
+        </ul>
+      ]]></description>
+      <pubDate>Tue, 14 Jan 2025 12:00:00 +0000</pubDate>
+      <enclosure
+        url="https://github.com/touch-tap/CCNotifier/releases/download/v1.0.0/CCNotifier.zip"
+        sparkle:edSignature="SIGNATURE_PLACEHOLDER"
+        length="5000000"
+        type="application/octet-stream"/>
+    </item>
+
+    <!--
+    TEMPLATE FOR NEW RELEASES:
+
+    <item>
+      <title>Version X.Y.Z</title>
+      <sparkle:version>BUILD_NUMBER</sparkle:version>
+      <sparkle:shortVersionString>X.Y.Z</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>What's New</h2>
+        <ul>
+          <li>Feature 1</li>
+          <li>Bug fix 2</li>
+        </ul>
+      ]]></description>
+      <pubDate>DATE_HERE</pubDate>
+      <enclosure
+        url="https://github.com/touch-tap/CCNotifier/releases/download/vX.Y.Z/CCNotifier.zip"
+        sparkle:edSignature="RUN: sign_update CCNotifier.zip"
+        length="FILE_SIZE_IN_BYTES"
+        type="application/octet-stream"/>
+    </item>
+    -->
+
+  </channel>
+</rss>
